@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Para-Hide-with-AddEventListener </title>
+</head>
+
+<body>
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi non assumenda veritatis quo provident corporis dolorum, deserunt consectetur harum, qui ipsam at nihil rem optio vero a, saepe consequuntur magni!</p>
+    <button id='bo'>hide</button>
+
+    <script>
+        para = document.getElementById('para')
+        botn = document.getElementById('bo')
+
+        // para.style.display = 'none'
+
+        // function test() {
+        //     para.style.display = 'none'
+        // }
+
+
+        // Method = addEventListener("function ma jenathi call karvanu hoy e lakhvanu pn on nahi baki badhu")
+
+        // Syntex ==>
+
+        // varname.addEventListener("click", function  functionName()
+        // {
+        //     code...!
+        // }
+        // )
+
+        // botn.addEventListener("click",
+        //     function test() {
+        //         para.style.display = 'none';
+        //     }
+        // )
+
+        botn.addEventListener("mouseenter",
+            function test() {
+                para.style.display = 'none';
+            }
+        )
+
+        botn.addEventListener("mouseenter",
+            () => {
+                para.style.display = 'none';
+            }
+        )
+    </script>
+
+</body>
+
+</html>
